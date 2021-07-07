@@ -10,9 +10,8 @@
 		3419028D2691D8BF009CE550 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419028C2691D8BF009CE550 /* main.swift */; };
 		341902B42691E630009CE550 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341902B32691E630009CE550 /* Product.swift */; };
 		341902BA2691E648009CE550 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341902B92691E648009CE550 /* Factory.swift */; };
-		341902C02691E66F009CE550 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341902BF2691E66F009CE550 /* FactoryMethod.swift */; };
-		341902C62691E6FC009CE550 /* ProductA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341902C52691E6FC009CE550 /* ProductA.swift */; };
-		341902CC2691E702009CE550 /* ProductB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341902CB2691E702009CE550 /* ProductB.swift */; };
+		342049602695B65900565441 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420495F2695B65900565441 /* AbstractFactory.swift */; };
+		342049662695B66F00565441 /* Factory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342049652695B66F00565441 /* Factory2.swift */; };
 		3423EDBD268DF89F00684528 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423EDBC268DF89F00684528 /* Language.swift */; };
 		3423EDC1268DF8DB00684528 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423EDC0268DF8DB00684528 /* Hello.swift */; };
 		3449D1A6268DFA3C001C608D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D1A5268DFA3C001C608D /* Factory.swift */; };
@@ -67,9 +66,8 @@
 		3419028C2691D8BF009CE550 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		341902B32691E630009CE550 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		341902B92691E648009CE550 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
-		341902BF2691E66F009CE550 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
-		341902C52691E6FC009CE550 /* ProductA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductA.swift; sourceTree = "<group>"; };
-		341902CB2691E702009CE550 /* ProductB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductB.swift; sourceTree = "<group>"; };
+		3420495F2695B65900565441 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		342049652695B66F00565441 /* Factory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory2.swift; sourceTree = "<group>"; };
 		3423EDBC268DF89F00684528 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		3423EDC0268DF8DB00684528 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		3449D1A5268DFA3C001C608D /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
@@ -119,11 +117,26 @@
 			isa = PBXGroup;
 			children = (
 				3419028C2691D8BF009CE550 /* main.swift */,
+				342049592695B61F00565441 /* Factory */,
+				3420495A2695B62300565441 /* Factory Method */,
+			);
+			path = "Factory Method";
+			sourceTree = "<group>";
+		};
+		342049592695B61F00565441 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
 				341902B32691E630009CE550 /* Product.swift */,
 				341902B92691E648009CE550 /* Factory.swift */,
-				341902BF2691E66F009CE550 /* FactoryMethod.swift */,
-				341902C52691E6FC009CE550 /* ProductA.swift */,
-				341902CB2691E702009CE550 /* ProductB.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		3420495A2695B62300565441 /* Factory Method */ = {
+			isa = PBXGroup;
+			children = (
+				3420495F2695B65900565441 /* AbstractFactory.swift */,
+				342049652695B66F00565441 /* Factory2.swift */,
 			);
 			path = "Factory Method";
 			sourceTree = "<group>";
@@ -299,12 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341902CC2691E702009CE550 /* ProductB.swift in Sources */,
+				342049602695B65900565441 /* AbstractFactory.swift in Sources */,
 				3419028D2691D8BF009CE550 /* main.swift in Sources */,
 				341902B42691E630009CE550 /* Product.swift in Sources */,
-				341902C62691E6FC009CE550 /* ProductA.swift in Sources */,
 				341902BA2691E648009CE550 /* Factory.swift in Sources */,
-				341902C02691E66F009CE550 /* FactoryMethod.swift in Sources */,
+				342049662695B66F00565441 /* Factory2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
