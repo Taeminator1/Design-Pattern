@@ -15,6 +15,10 @@
 		3423EDBD268DF89F00684528 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423EDBC268DF89F00684528 /* Language.swift */; };
 		3423EDC1268DF8DB00684528 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423EDC0268DF8DB00684528 /* Hello.swift */; };
 		3449D1A6268DFA3C001C608D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D1A5268DFA3C001C608D /* Factory.swift */; };
+		34AA691726970258006BFCAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA691626970258006BFCAE /* main.swift */; };
+		34AA69212697026A006BFCAE /* CarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA69202697026A006BFCAE /* CarFactory.swift */; };
+		34AA6928269702B0006BFCAE /* TireFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA6927269702B0006BFCAE /* TireFactory.swift */; };
+		34AA692F269702B8006BFCAE /* DoorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA692E269702B8006BFCAE /* DoorFactory.swift */; };
 		34FA7D60268FF97100EB8BA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FA7D5F268FF97100EB8BA5 /* main.swift */; };
 		34FA7D70268FF9DF00EB8BA5 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FA7D6F268FF9DF00EB8BA5 /* Singleton.swift */; };
 		34FA7D89269010A600EB8BA5 /* NonSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FA7D88269010A600EB8BA5 /* NonSingleton.swift */; };
@@ -24,6 +28,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		341902882691D8BF009CE550 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		34AA691226970258006BFCAE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -71,6 +84,11 @@
 		3423EDBC268DF89F00684528 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		3423EDC0268DF8DB00684528 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		3449D1A5268DFA3C001C608D /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		34AA691426970258006BFCAE /* Abstract Factory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Abstract Factory"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34AA691626970258006BFCAE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		34AA69202697026A006BFCAE /* CarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFactory.swift; sourceTree = "<group>"; };
+		34AA6927269702B0006BFCAE /* TireFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TireFactory.swift; sourceTree = "<group>"; };
+		34AA692E269702B8006BFCAE /* DoorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorFactory.swift; sourceTree = "<group>"; };
 		34FA7D5D268FF97100EB8BA5 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FA7D5F268FF97100EB8BA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		34FA7D6F268FF9DF00EB8BA5 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -83,6 +101,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		341902872691D8BF009CE550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34AA691126970258006BFCAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,6 +166,17 @@
 			path = "Factory Method";
 			sourceTree = "<group>";
 		};
+		34AA691526970258006BFCAE /* Abstract Factory */ = {
+			isa = PBXGroup;
+			children = (
+				34AA691626970258006BFCAE /* main.swift */,
+				34AA69202697026A006BFCAE /* CarFactory.swift */,
+				34AA6927269702B0006BFCAE /* TireFactory.swift */,
+				34AA692E269702B8006BFCAE /* DoorFactory.swift */,
+			);
+			path = "Abstract Factory";
+			sourceTree = "<group>";
+		};
 		34FA7D5E268FF97100EB8BA5 /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +194,7 @@
 				34FA96CD268C9B0400ABEF8D /* Factory */,
 				34FA7D5E268FF97100EB8BA5 /* Singleton */,
 				3419028B2691D8BF009CE550 /* Factory Method */,
+				34AA691526970258006BFCAE /* Abstract Factory */,
 				34FA96BE268C98FA00ABEF8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,6 +206,7 @@
 				34FA96CC268C9B0400ABEF8D /* Factory */,
 				34FA7D5D268FF97100EB8BA5 /* Singleton */,
 				3419028A2691D8BF009CE550 /* Factory Method */,
+				34AA691426970258006BFCAE /* Abstract Factory */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +248,23 @@
 			name = "Factory Method";
 			productName = "Factory Method";
 			productReference = 3419028A2691D8BF009CE550 /* Factory Method */;
+			productType = "com.apple.product-type.tool";
+		};
+		34AA691326970258006BFCAE /* Abstract Factory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34AA691A26970258006BFCAE /* Build configuration list for PBXNativeTarget "Abstract Factory" */;
+			buildPhases = (
+				34AA691026970258006BFCAE /* Sources */,
+				34AA691126970258006BFCAE /* Frameworks */,
+				34AA691226970258006BFCAE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Abstract Factory";
+			productName = "Abstract Factory";
+			productReference = 34AA691426970258006BFCAE /* Abstract Factory */;
 			productType = "com.apple.product-type.tool";
 		};
 		34FA7D5C268FF97100EB8BA5 /* Singleton */ = {
@@ -275,6 +330,9 @@
 					341902892691D8BF009CE550 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					34AA691326970258006BFCAE = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					34FA7D5C268FF97100EB8BA5 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -303,6 +361,7 @@
 				34FA96CB268C9B0400ABEF8D /* Factory */,
 				34FA7D5C268FF97100EB8BA5 /* Singleton */,
 				341902892691D8BF009CE550 /* Factory Method */,
+				34AA691326970258006BFCAE /* Abstract Factory */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +376,17 @@
 				341902B42691E630009CE550 /* Product.swift in Sources */,
 				341902BA2691E648009CE550 /* Factory.swift in Sources */,
 				342049662695B66F00565441 /* Factory2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34AA691026970258006BFCAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AA692F269702B8006BFCAE /* DoorFactory.swift in Sources */,
+				34AA691726970258006BFCAE /* main.swift in Sources */,
+				34AA6928269702B0006BFCAE /* TireFactory.swift in Sources */,
+				34AA69212697026A006BFCAE /* CarFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +434,28 @@
 			name = Debug;
 		};
 		3419028F2691D8BF009CE550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LGU69RG34G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		34AA691826970258006BFCAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LGU69RG34G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		34AA691926970258006BFCAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +655,15 @@
 			buildConfigurations = (
 				3419028E2691D8BF009CE550 /* Debug */,
 				3419028F2691D8BF009CE550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34AA691A26970258006BFCAE /* Build configuration list for PBXNativeTarget "Abstract Factory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34AA691826970258006BFCAE /* Debug */,
+				34AA691926970258006BFCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
