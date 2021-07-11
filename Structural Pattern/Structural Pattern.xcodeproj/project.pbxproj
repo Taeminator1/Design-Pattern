@@ -11,6 +11,9 @@
 		3406B62026998B3F00817D1D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B61F26998B3F00817D1D /* main.swift */; };
 		3406B62726998BA900817D1D /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B62626998BA900817D1D /* Math.swift */; };
 		3406B62B26998BD800817D1D /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B62A26998BD800817D1D /* Adapter.swift */; };
+		3412C378269A69C000F62B23 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412C377269A69C000F62B23 /* main.swift */; };
+		3412C380269A69E500F62B23 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412C37F269A69E500F62B23 /* Hello.swift */; };
+		3412C385269A6C2100F62B23 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412C384269A6C2100F62B23 /* Bridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3412C373269A69C000F62B23 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +53,10 @@
 		3406B61F26998B3F00817D1D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3406B62626998BA900817D1D /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		3406B62A26998BD800817D1D /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		3412C375269A69C000F62B23 /* Bridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bridge; sourceTree = BUILT_PRODUCTS_DIR; };
+		3412C377269A69C000F62B23 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3412C37F269A69E500F62B23 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
+		3412C384269A6C2100F62B23 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3412C372269A69C000F62B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +89,7 @@
 			children = (
 				3406B61026998B1500817D1D /* Structural Pattern */,
 				3406B61E26998B3F00817D1D /* Adapter */,
+				3412C376269A69C000F62B23 /* Bridge */,
 				3406B60F26998B1500817D1D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +99,7 @@
 			children = (
 				3406B60E26998B1500817D1D /* Structural Pattern */,
 				3406B61D26998B3F00817D1D /* Adapter */,
+				3412C375269A69C000F62B23 /* Bridge */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +120,16 @@
 				3406B62A26998BD800817D1D /* Adapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		3412C376269A69C000F62B23 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				3412C377269A69C000F62B23 /* main.swift */,
+				3412C37F269A69E500F62B23 /* Hello.swift */,
+				3412C384269A6C2100F62B23 /* Bridge.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +169,23 @@
 			productReference = 3406B61D26998B3F00817D1D /* Adapter */;
 			productType = "com.apple.product-type.tool";
 		};
+		3412C374269A69C000F62B23 /* Bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3412C37B269A69C000F62B23 /* Build configuration list for PBXNativeTarget "Bridge" */;
+			buildPhases = (
+				3412C371269A69C000F62B23 /* Sources */,
+				3412C372269A69C000F62B23 /* Frameworks */,
+				3412C373269A69C000F62B23 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bridge;
+			productName = Bridge;
+			productReference = 3412C375269A69C000F62B23 /* Bridge */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,6 +199,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					3406B61C26998B3F00817D1D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3412C374269A69C000F62B23 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -166,6 +221,7 @@
 			targets = (
 				3406B60D26998B1500817D1D /* Structural Pattern */,
 				3406B61C26998B3F00817D1D /* Adapter */,
+				3412C374269A69C000F62B23 /* Bridge */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +242,16 @@
 				3406B62026998B3F00817D1D /* main.swift in Sources */,
 				3406B62B26998BD800817D1D /* Adapter.swift in Sources */,
 				3406B62726998BA900817D1D /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3412C371269A69C000F62B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3412C380269A69E500F62B23 /* Hello.swift in Sources */,
+				3412C378269A69C000F62B23 /* main.swift in Sources */,
+				3412C385269A6C2100F62B23 /* Bridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +417,28 @@
 			};
 			name = Release;
 		};
+		3412C379269A69C000F62B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LGU69RG34G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3412C37A269A69C000F62B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LGU69RG34G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +465,15 @@
 			buildConfigurations = (
 				3406B62226998B3F00817D1D /* Debug */,
 				3406B62326998B3F00817D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3412C37B269A69C000F62B23 /* Build configuration list for PBXNativeTarget "Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3412C379269A69C000F62B23 /* Debug */,
+				3412C37A269A69C000F62B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
